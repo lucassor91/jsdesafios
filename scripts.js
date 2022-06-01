@@ -8,6 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let mailuser
     let celuser
 
+    //ARRAYS
+
+    let animalesenadopcion = ['gatitos','perritos','conejos']
+
+
     nombre = prompt("Bienvenido a Casa Gatitos! Cual es tu nombre?")
      
     console.log(nombre)
@@ -22,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (esusuario == 1) {
             alert("Bienvenido a CASA GATITOS " + nombre + "! Cómo podemos ayudarte hoy?")
-            respuesta1 = prompt("\n1 Quiero Adoptar!.\n2 Quiero Donar.")
+            respuesta1 = prompt("\n1 Quiero Adoptar!.\n2 Quiero Donar.\n3 Quiero saber los Animalitos disponibles para adoptar")
         
         } else {
             alert (nombre + ", vamos a registrar tu usuario. Por favor completa los siguientes campos:")
@@ -54,6 +59,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (window.confirm("Si cliqueas en 'OK' serás redirigido a nuestro sitio de adopcion.\nSi cliqueas 'Cancelar' permanecerás en este sitio")) {
                     window.location.href='https://lucassor91.github.io/repositorioSASS/paginas/dona.html';
                 }
-            }else{      
-            }
+            //DESAFIO ARRAY    
+            }else if (respuesta1 == 3){
+                for (let i = 0; i < animalesenadopcion.length; i++) 
+                alert ( animalesenadopcion [i])
+            }else{}
         }, false);
