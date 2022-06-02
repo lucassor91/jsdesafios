@@ -63,5 +63,5 @@ document.addEventListener('DOMContentLoaded', function() {
             }else if (respuesta1 == 3){
                 for (let i = 0; i < animalesenadopcion.length; i++) 
                 alert ( animalesenadopcion [i])
-            }else{}
+            }
         }, false);
